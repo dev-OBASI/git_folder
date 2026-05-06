@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="..MYJS/old_file.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <h2>Tip Calculator</h2>
+        <p>Enter your bill amount and rate. Let's calculate your tips.</p>
+
+        <div class="amount">
+            <p>Amount:</p>
+            <input type="number" placeholder="0">
+        </div>
+        <div class="tip-rate">
+            <p>Rate:</p>
+            <input type="number" placeholder="0">
+        </div>
+        <div class="calculate">
+            <p class="diplay-total">Total:<span>0</span></p>
+            <button onclick="calculate-total">Calculate</button>
+        </div>
+    </div>
 
     <script src="..MYJS/newfile.js"></script>
 </body>
