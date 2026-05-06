@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="..MYJS/old_file.css">
+    <title>My Tip Calculator</title>
+    <link rel="stylesheet" href="old_file.css">
 </head>
 <body>
     <div class="wrapper">
-        <h2>Tip Calculator</h2>
-        <p>Enter your bill amount and rate. Let's calculate your tips.</p>
+       <div class="intro-header">
+         <h1>Tip Calculator</h1>
+        <p>Enter your bill amount and tips Percent to calculate your total tips.</p>
+       </div>
+      
+        <label>Bill Amount:</label>
+        <input type="number" placeholder="0" id="bill-amount">
 
-        <div class="amount">
-            <p>Amount:</p>
-            <input type="number" placeholder="0">
-        </div>
-        <div class="tip-rate">
-            <p>Rate:</p>
-            <input type="number" placeholder="0">
-        </div>
+        <label>Tip Percentage:</label>
+        <input type="number" placeholder="0" id="tips-percent">
+        <button onclick="calculateTotal()">CALCULATE</button>
+
         <div class="calculate">
-            <p class="diplay-total">Total:<span>0</span></p>
-            <button onclick="calculate-total">Calculate</button>
+            <p class="diplay-total">Tips: <span id="tip-value">0</span></p>
+            <p>Total Payment: <span id="total"> 0</span></p>
         </div>
     </div>
 
-    <script src="..MYJS/newfile.js"></script>
+    <script src="newfile.js"></script>
 </body>
 </html>
