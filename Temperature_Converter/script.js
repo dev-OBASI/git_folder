@@ -7,8 +7,8 @@ function celChange() {
     let fahrenheitValue = parseFloat(fahrenheitInput.value);
     let kelvinValue = parseFloat(kelvinInput.value);
 
-    let fahrenheitResult = ((celsiusValue * 9/5) + 32).toFixed(3);
-    let kelvinResult = (celsiusValue + 273.15).toFixed(3);
+    let fahrenheitResult = ((celsiusValue * 9/5) + 32).toFixed(2);
+    let kelvinResult = (celsiusValue + 273.15).toFixed(2);
 
     fahrenheitInput.value = fahrenheitResult;
     kelvinInput.value = kelvinResult;
@@ -19,8 +19,8 @@ function farChange() {
     let fahrenheitValue = parseFloat(fahrenheitInput.value);
     let kelvinValue = parseFloat(kelvinInput.value);
 
-    let celsiusResult = ((fahrenheitValue - 32) * 5/9).toFixed(3);
-    let kelvinResult = ((fahrenheitValue - 32) * 5/9 + 273.15).toFixed(3);
+    let celsiusResult = ((fahrenheitValue - 32) * 5/9).toFixed(2);
+    let kelvinResult = ((fahrenheitValue - 32) * 5/9 + 273.15).toFixed(2);
 
     celsiusInput.value = celsiusResult;
     kelvinInput.value = kelvinResult;
@@ -31,13 +31,13 @@ function kelChange() {
     let fahrenheitValue = parseFloat(fahrenheitInput.value);
     let kelvinValue = parseFloat(kelvinInput.value);
 
-    let celsiusResult = (kelvinValue - 273.15).toFixed(3);
-    let fahrenheitResult = ((kelvinValue - 273.15) * 9/5 + 32).toFixed(3);
+    let celsiusResult = (kelvinValue - 273.15).toFixed(2);
+    let fahrenheitResult = ((kelvinValue - 273.15) * 9/5 + 32).toFixed(2);
 
     celsiusInput.value = celsiusResult;
     fahrenheitInput.value = fahrenheitResult;
 }
 
-celsiusInput.addEventListener('change', celChange);
-fahrenheitInput.addEventListener('change', farChange);
-kelvinInput.addEventListener('change', kelChange);
+celsiusInput.addEventListener('input', celChange);
+fahrenheitInput.addEventListener('input', farChange);
+kelvinInput.addEventListener('input', kelChange);
