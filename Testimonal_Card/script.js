@@ -13,8 +13,8 @@ let count = 0;
 function showCurrentBox(index) {
 
     // TO PICK THE BOXES ONE AFTER THE OTHER... ELSE THEY WILL ALL SHOW AT THE SAME TIME
-    showBox.forEach((item) => {
-        item.style.display = 'none';
+    showBox.forEach((box) => {
+        box.style.display = 'none';
 
     });
     //DISPLAYS THE BOXES ONE AFTER THE OTHER AS THE INDEX INCREASES
