@@ -113,3 +113,10 @@ span{
     }
 
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    ul{
+        width: 80%;
+        margin: 1rem;
+    }
+}
