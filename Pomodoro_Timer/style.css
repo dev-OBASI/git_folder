@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    margin: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
+
+#start{
+    background-color: green;
+}
+
+#start:hover{
+    background-color: rgb(32, 214, 32);
+}
+
+#pause{
+    background-color: red;
+}
+
+#pause:hover{
+    background-color: rgb(243, 19, 19);
+}
+
+#restart{
+    background-color: blue;
+}
+
+#restart:hover{
+    background-color: rgb(18, 18, 231);
+}
+
+@media (max-width: 320px){
+    button{
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        margin: 1rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    button{
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+        margin: 1rem;
+    }
+    .title{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    button{
+        width: 90px;
+        height: 32px;
+        font-size: 15px;
+        margin: 1.5rem;
+    }
+}
